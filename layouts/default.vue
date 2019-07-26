@@ -1,5 +1,4 @@
 <template>
-
   <v-app dark>
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <v-list>
@@ -25,7 +24,7 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer> -->
+    </v-navigation-drawer>-->
 
     <v-toolbar :clipped-left="clipped" fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer" />
@@ -38,14 +37,13 @@
 
     <v-content>
       <v-container class="fill-height">
-        <nuxt class="fill-height"/>
+        <nuxt class="fill-height" />
       </v-container>
     </v-content>
 
     <v-footer :fixed="fixed" app>
       <span>&copy; 2019</span>
     </v-footer>
-
   </v-app>
 </template>
 
@@ -58,30 +56,39 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
+          icon: "apps",
+          title: "Welcome",
+          to: "/"
         },
         {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: "bubble_chart",
+          title: "Inspire",
+          to: "/inspire"
         },
         {
-          icon: 'person',
-          title: 'Species',
-          to: '/species'
+          icon: "person",
+          title: "Species",
+          to: "/species"
+        },
+        {
+          icon: "person",
+          title: "Character Creator",
+          to: "/character-creator"
+        },
+        {
+          icon: "book",
+          title: "Layout Test",
+          to: "/test-layout-page"
         }
       ],
       miniVariant: true,
       right: true,
       rightDrawer: true,
-      title: 'SW5E Character Creator'
-    }
+      title: "SW5E Character Creator"
+    };
   }
-}
+};
 </script>
 
 <style scoped>
-  
 </style>
