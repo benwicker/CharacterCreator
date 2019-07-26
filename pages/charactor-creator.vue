@@ -9,6 +9,8 @@
                 <v-stepper-step editable step="1">Species</v-stepper-step>
                 <v-divider></v-divider>
                 <v-stepper-step editable step="2">Class</v-stepper-step>
+                <v-divider></v-divider>
+                <v-stepper-step editable step="3">Abilities</v-stepper-step>
               </v-stepper-header>
             </v-flex>
             <v-flex md12>

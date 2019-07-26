@@ -67,18 +67,8 @@ export default {
         },
         {
           icon: "person",
-          title: "Species",
-          to: "/species"
-        },
-        {
-          icon: "person",
-          title: "Character Creator",
-          to: "/character-creator"
-        },
-        {
-          icon: "book",
-          title: "Layout Test",
-          to: "/test-layout-page"
+          title: "Charactor Creator",
+          to: "/charactor-creator"
         }
       ],
       miniVariant: true,
