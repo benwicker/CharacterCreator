@@ -4,8 +4,10 @@
       <v-flex xs11>
         <v-layout row class="fill-height">
           <v-flex xs4>
-            <v-card dark color="primary" class="fill-height">
-              <v-card-text class="px-0">12</v-card-text>
+            <v-card dark class="fill-height elevation-10">
+              <template v-for="bioItem in selectedSpecies.bio">
+                <v-card-text>{{bioItem.header}}</v-card-text>
+              </template>
             </v-card>
           </v-flex>
           <v-flex xs4 pb-0>
@@ -51,3 +53,15 @@
     </v-layout>
   </v-container>
 </template>
+
+<script>
+import species from "/data/species.json"
+
+export default {
+  data() {
+    return {
+      selectedSpecies: species[0]
+    }
+  },
+}
+</script>

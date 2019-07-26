@@ -1,7 +1,7 @@
 <template>
   <v-container fluid ma-0 pa-0>
-    <v-layout>
-      <v-flex>
+    <v-layout justify-center>
+      <v-flex lg9>
         <v-stepper class="fill-height">
           <v-layout column fill-height>
             <v-flex>
