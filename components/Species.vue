@@ -1,27 +1,31 @@
 <template>
   <v-container grid-list-md pa-0 ma-0>
     <v-layout column class="fill-height" style="min-height: 0;">
-      <v-flex d-flex md10 lg10 class="fill-height">
+      <v-flex d-flex md11 lg11 class="fill-height">
         <v-layout class="fill-height">
           <v-flex md4 class="fill-height">
-            <v-card class="secondary scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
+            <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
+              <template v-for="bioItem in selectedSpecies.bio">
+                <v-card-title class="font-weight-bold pb-1" :key="bioItem.header">{{bioItem.header}}</v-card-title>
+                <v-divider class="ml-2 mr-2" :key="bioItem.content"></v-divider>
+                <v-card-text class="pt-1" :key="bioItem.content">{{bioItem.content}}</v-card-text>
+              </template>
+            </v-card>
+          </v-flex>
+          <v-flex md4 class="fill-height">
+            <v-card class="scroll-y" style="height: 100%;" data-simplebar>
               <v-card-text>Hello</v-card-text>
             </v-card>
           </v-flex>
           <v-flex md4 class="fill-height">
-            <v-card class="secondary scroll-y" style="height: 100%;" data-simplebar>
-              <v-card-text>Hello</v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex md4 class="fill-height">
-            <v-card class="secondary scroll-y" style="height: 100%;" data-simplebar>
+            <v-card class="scroll-y" style="height: 100%;" data-simplebar>
               <v-card-text>Hello</v-card-text>
             </v-card>
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex md2 lg2 class="fill-height">
-        <v-card class="secondary scroll-y" style="height: 100%;" data-simplebar>
+      <v-flex md1 lg1 class="fill-height">
+        <v-card class="scroll-y" style="height: 100%;" data-simplebar>
           <v-card-text>Hello</v-card-text>
         </v-card>
       </v-flex>
