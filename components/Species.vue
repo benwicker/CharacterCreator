@@ -13,9 +13,9 @@
             </v-card>
           </v-flex>
           <v-flex md4 class="fill-height">
-            <v-card class="scroll-y" style="height: 100%;" data-simplebar>
-              <v-card-text>Hello</v-card-text>
-            </v-card>
+            <v-layout column class="fill-height primary"> 
+              <v-flex sm4 class="secondary" style="height: 100%"> </v-flex>
+            </v-layout>
           </v-flex>
           <v-flex md4 class="fill-height">
             <v-card class="scroll-y" style="height: 100%;" data-simplebar>
