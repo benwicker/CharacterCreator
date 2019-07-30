@@ -4,7 +4,7 @@
       <v-flex lg9>
         <v-stepper class="fill-height">
           <v-layout class="fill-height" column ref="stepperLayout">
-            <v-flex md1 lg1 class="fill-height">
+            <v-flex xs1 class="fill-height">
               <v-stepper-header>
                 <v-stepper-step editable step="1">Species</v-stepper-step>
                 <v-divider></v-divider>
@@ -13,7 +13,7 @@
                 <v-stepper-step editable step="3">Abilities</v-stepper-step>
               </v-stepper-header>
             </v-flex>
-            <v-flex d-flex md11 lg11 class="fill-height">
+            <v-flex d-flex xs11 class="fill-height">
               <v-stepper-items class="fill-height">
                 <v-stepper-content step="1" class="fill-height">
                   <species class="fill-height"/>
