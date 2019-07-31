@@ -18,27 +18,30 @@
                 "content": "Humans are the most populace species in the Galaxy, and thus their names vary drastically based on the planet or culture with whom they reside. \n\n Male Names. Koth, Liorz, Satapak, Tin, Vuc. \nFemale Names. Dhetia, Jhilk, Risha, Thinnih, Tonu \nSurnames. Jauli, Kudi, Melmi, Windu, Wobec"
             }
         ],
-        "characteristics": {
-            "visual": {
-                "skinColor": "Light to dark tones",
-                "hairColor": "Black, blond, orange, brown, gray to white (usually with age)",
-                "eyeColor": "Amber, blue, brown, gray, green, hazel, purple, or red",
-                "Distinctions": "Biped with bilateral symmetry, opposable thumbs"
+        "characteristics": [
+            {
+                "category": "Visual Characteristics",
+                "items": [
+                    {"name": "Skin Color", "value": "Light to dark tones"},
+                    {"name": "Hair Color", "value": "Black, blond, orange, brown, gray to white (usually with age)"},
+                    {"name": "Eye Color", "value": "Amber, blue, brown, gray, green, hazel, purple, or red"},
+                    {"name": "Distinctions", "value": "Biped with bilateral symmetry, opposable thumbs"}
+                ]
             },
-            "physical": {
-                "height": {
-                    "base": "4'8\"",
-                    "addition": "+2d10\""
-                },
-                "weight": {
-                    "base": "110 lb.",
-                    "addition": "x2d4 lb."
-                }
+            {
+                "category": "Physical Characteristics",
+                "items": [
+                    {"name": "Height", "value": "4'8\" + 2d10\""},
+                    {"name": "Weight", "value": "110 lb + x2d4 lb"}
+                ]
             },
-            "sociocultural": {
-                "homeworld": "Coruscant",
-                "language": "Galactic Basic"
+            {
+                "category": "Sociocultural Characteristics",
+                "items": [
+                    {"name": "Homeworld", "value": "Coruscant"},
+                    {"name": "Language", "value": "Galactic Basic"}
+                ]
             }
-        }
+        ]
     }
 ]

@@ -25,6 +25,7 @@
                 <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
                   <v-card-text class="title pb-2" style="text-align: center;">{{selectedSpecies.name}}</v-card-text>
                   <v-divider class="ml-2 mr-2"></v-divider>
+                  <v-data-table></v-data-table>
                 </v-card>
               </v-flex>
             </v-layout>
