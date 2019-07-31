@@ -6,15 +6,27 @@
           <v-flex md4 class="fill-height">
             <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
               <template v-for="bioItem in selectedSpecies.bio">
-                <v-card-title class="font-weight-bold pb-1" :key="bioItem.header">{{bioItem.header}}</v-card-title>
-                <v-divider class="ml-2 mr-2" :key="bioItem.content"></v-divider>
-                <v-card-text class="pt-1" :key="bioItem.content">{{bioItem.content}}</v-card-text>
+                <div :key="bioItem.id">
+                  <v-card-title
+                    class="font-weight-bold pb-1"
+                  >{{bioItem.header}}</v-card-title>
+                  <v-divider class="ml-2 mr-2"></v-divider>
+                  <v-card-text class="pt-1">{{bioItem.content}}</v-card-text>
+                </div>
               </template>
             </v-card>
           </v-flex>
-          <v-flex md4 class="fill-height">
-            <v-layout column class="fill-height primary"> 
-              <v-flex sm4 class="secondary" style="height: 100%"> </v-flex>
+          <v-flex md4 class="fill-height mb-0 pb-0">
+            <v-layout column class="fill-height">
+              <v-flex sm6 style="height: 100%">
+                <v-card style="height: 100%; min-height: 0;"></v-card>
+              </v-flex>
+              <v-flex sm6 class="mb-0 pb-0" style="height: 100%">
+                <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
+                  <v-card-text class="title pb-2" style="text-align: center;">{{selectedSpecies.name}}</v-card-text>
+                  <v-divider class="ml-2 mr-2"></v-divider>
+                </v-card>
+              </v-flex>
             </v-layout>
           </v-flex>
           <v-flex md4 class="fill-height">
@@ -48,7 +60,7 @@ export default {
 </script>
 
 <style scoped>
-  v-flex {
-    min-height: 0;
-  }
+v-flex {
+  min-height: 0;
+}
 </style>
