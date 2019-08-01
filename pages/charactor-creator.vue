@@ -1,7 +1,7 @@
 <template>
   <v-container ma-0 pa-0>
     <v-layout justify-center>
-      <v-flex lg9>
+      <v-flex>
         <v-stepper class="fill-height">
           <v-layout class="fill-height" column ref="stepperLayout">
             <v-flex xs1 class="fill-height">

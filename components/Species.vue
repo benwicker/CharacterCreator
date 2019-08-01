@@ -7,9 +7,7 @@
             <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
               <template v-for="bioItem in selectedSpecies.bio">
                 <div :key="bioItem.id">
-                  <v-card-title
-                    class="font-weight-bold pb-1"
-                  >{{bioItem.header}}</v-card-title>
+                  <v-card-title class="font-weight-bold pb-1">{{bioItem.header}}</v-card-title>
                   <v-divider class="ml-2 mr-2"></v-divider>
                   <v-card-text class="pt-1">{{bioItem.content}}</v-card-text>
                 </div>
@@ -18,26 +16,25 @@
           </v-flex>
           <v-flex md4 class="fill-height mb-0 pb-0">
             <v-layout column class="fill-height">
-              <v-flex sm6 style="height: 100%">
+              <v-flex sm6 d-flex style="height: 100%">
                 <v-card style="height: 100%; min-height: 0;"></v-card>
               </v-flex>
-              <v-flex sm6 class="mb-0 pb-0" style="height: 100%">
+              <v-flex sm6 d-flex class="mb-0 pb-0" style="height: 100%">
                 <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
-                  <v-card-text class="title pb-2" style="text-align: center;">{{selectedSpecies.name}}</v-card-text>
-                  <v-divider class="ml-2 mr-2"></v-divider>
+                  <v-card-text
+                    class="title pb-2"
+                    style="text-align: center;"
+                  >{{selectedSpecies.name}}</v-card-text>
                   <template v-for="c in selectedSpecies.characteristics">
-                    <v-simple-table :key="c.category">
-                      <thead>
-                        <th class="text-left">{{c.category}}</th>
-                        <th>Hello</th>
-                      </thead>
-                      <tbody>
-                        <tr v-for="i in c.items" :key="i.name">
-                          <td>{{ i.name }}</td>
-                          <td>{{ i.value }}</td>
-                        </tr>
-                      </tbody>
-                    </v-simple-table>
+                    <div :key="c.category">
+                      <v-divider class="ml-2 mr-2"></v-divider>
+                      <br />
+                      <v-card-text class="pb-0 pt-0 font-weight-bold">{{c.category}}</v-card-text>
+                      <template v-for="i in c.items">
+                        <v-card-text class="pb-1 pt-1" :key="i.name">{{i.name}}: {{i.value}}</v-card-text>
+                      </template>
+                      <br />
+                    </div>
                   </template>
                 </v-card>
               </v-flex>
