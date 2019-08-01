@@ -25,7 +25,20 @@
                 <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
                   <v-card-text class="title pb-2" style="text-align: center;">{{selectedSpecies.name}}</v-card-text>
                   <v-divider class="ml-2 mr-2"></v-divider>
-                  <v-data-table></v-data-table>
+                  <template v-for="c in selectedSpecies.characteristics">
+                    <v-simple-table :key="c.category">
+                      <thead>
+                        <th class="text-left">{{c.category}}</th>
+                        <th>Hello</th>
+                      </thead>
+                      <tbody>
+                        <tr v-for="i in c.items" :key="i.name">
+                          <td>{{ i.name }}</td>
+                          <td>{{ i.value }}</td>
+                        </tr>
+                      </tbody>
+                    </v-simple-table>
+                  </template>
                 </v-card>
               </v-flex>
             </v-layout>
