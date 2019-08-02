@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" app clipped :mini-variant="miniVariant">
+    <v-navigation-drawer v-model="drawer" app clipped :mini-variant="miniVariant" ref="navbar">
       <v-list dense>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to">
           <v-list-item-action>
@@ -21,9 +21,9 @@
       <v-toolbar-title>{{ title }}</v-toolbar-title>
     </v-app-bar>
 
-    <v-content>
+    <v-content :style="'height: ' + contentHeight">
       <v-container fluid fill-height>
-        <nuxt />
+        <nuxt class="fill-height"/>
       </v-container>
     </v-content>
 
