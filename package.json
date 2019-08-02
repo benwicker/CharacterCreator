@@ -12,11 +12,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/vuetify": "0.5.5",
     "nuxt": "^2.0.0",
     "simplebar": "^4.1.0"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.1.1",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^24.1.0",
