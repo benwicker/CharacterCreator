@@ -20,19 +20,30 @@
                 <v-card style="height: 100%; min-height: 0; width: 100%;"></v-card>
               </v-flex>
               <v-flex sm6 d-flex class="mb-0 pb-0" style="height: 100%">
-                <v-card class="scroll-y" style="height: 100%; min-height: 0; width: 100%;" data-simplebar>
+                <v-card
+                  class="scroll-y"
+                  style="height: 100%; min-height: 0; width: 100%;"
+                  data-simplebar
+                >
                   <v-card-text
                     class="title pb-2"
                     style="text-align: center;"
                   >{{selectedSpecies.name}}</v-card-text>
+                  <v-divider class="ml-2 mr-2"></v-divider>
+                  <br />
                   <template v-for="c in selectedSpecies.characteristics">
                     <div :key="c.category">
-                      <v-divider class="ml-2 mr-2"></v-divider>
-                      <br />
                       <v-card-text class="pb-0 pt-0 font-weight-bold">{{c.category}}</v-card-text>
-                      <template v-for="i in c.items">
-                        <v-card-text class="pb-1 pt-1" :key="i.name">{{i.name}}: {{i.value}}</v-card-text>
-                      </template>
+                      <v-divider></v-divider>
+                      <v-simple-table dense class="noHover">
+                        <tbody>
+                          <tr v-for="i in c.items" :key="i.name">
+                            <td>{{i.name}}</td>
+                            <td>{{i.value}}</td>
+                          </tr>
+                        </tbody>
+                      </v-simple-table>
+                      <v-divider></v-divider>
                       <br />
                     </div>
                   </template>
@@ -73,5 +84,9 @@ export default {
 <style scoped>
 v-flex {
   min-height: 0;
+}
+
+.noHover {
+  pointer-events: none;
 }
 </style>
