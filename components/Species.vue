@@ -52,7 +52,7 @@
             </v-layout>
           </v-flex>
           <v-flex md4 class="fill-height">
-            <traits />
+            <traits :traits="selectedSpecies.traits"/>
           </v-flex>
         </v-layout>
       </v-flex>
