@@ -16,11 +16,11 @@
           </v-flex>
           <v-flex md4 class="fill-height mb-0 pb-0">
             <v-layout column class="fill-height">
-              <v-flex sm6 d-flex style="height: 100%">
-                <v-card style="height: 100%; min-height: 0;"></v-card>
+              <v-flex sm6 d-flex style="height: 100%; width">
+                <v-card style="height: 100%; min-height: 0; width: 100%;"></v-card>
               </v-flex>
               <v-flex sm6 d-flex class="mb-0 pb-0" style="height: 100%">
-                <v-card class="scroll-y" style="height: 100%; min-height: 0;" data-simplebar>
+                <v-card class="scroll-y" style="height: 100%; min-height: 0; width: 100%;" data-simplebar>
                   <v-card-text
                     class="title pb-2"
                     style="text-align: center;"
