@@ -1,5 +1,5 @@
 <template>
-  <v-container ma-0 pa-0>
+  <v-container ma-0 pa-0 fluid>
     <v-layout justify-center>
       <v-flex>
         <v-stepper class="fill-height">
@@ -14,7 +14,7 @@
               </v-stepper-header>
             </v-flex>
             <v-flex d-flex xs11 class="fill-height">
-              <v-stepper-items class="fill-height">
+              <v-stepper-items class="fill-height" style="width: 100%;">
                 <v-stepper-content step="1" class="fill-height">
                   <species class="fill-height"/>
                 </v-stepper-content>
