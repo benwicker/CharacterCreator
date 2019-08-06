@@ -1,6 +1,21 @@
 [
     {
         "name": "Human",
+        "speed": 30,
+        "size": {
+            "description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium. Speed. Your base walking speed is 30 feet.",
+            "value": "Medium"
+        },
+        "languages": {
+            "description": "",
+            "known": ["Basic"],
+            "add": {
+                "amount": 1
+            }
+        },
+        "age": {
+            "description": "Humans reach adulthood in their late teens and live less than a century."
+        },
         "bio": [
             {
                 "id": 1,
@@ -42,6 +57,9 @@
                     {"name": "Language", "value": "Galactic Basic"}
                 ]
             }
+        ],
+        "traits": [
+            {"name": "Defiant", "value": "Humans are known to be stubborn and often refuse to give up. even against the worst odds. You can add a d4 to a skill check or saving throw, after rolling but before you know the outcome. You must then 􀃕nish a short or long rest before you can use this feature again."}
         ]
     }
 ]
