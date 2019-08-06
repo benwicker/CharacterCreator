@@ -52,9 +52,7 @@
             </v-layout>
           </v-flex>
           <v-flex md4 class="fill-height">
-            <v-card class="scroll-y" style="height: 100%;" data-simplebar>
-              <v-card-text>Hello</v-card-text>
-            </v-card>
+            <traits />
           </v-flex>
         </v-layout>
       </v-flex>
@@ -69,10 +67,14 @@
 
 <script>
 import species from "static/data/species.json";
+import Traits from "~/components/species/Traits.vue"
 import "simplebar"; // or "import SimpleBar from 'simplebar';" if you want to use it manually.
 import "simplebar/dist/simplebar.css";
 
 export default {
+  components: {
+    Traits
+  },
   data() {
     return {
       selectedSpecies: species[0]
