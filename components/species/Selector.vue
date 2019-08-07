@@ -2,7 +2,7 @@
   <v-card class="scroll-y" style="height: 100%;" data-simplebar>
     <v-card-actions class="justify-center">
       <template v-for="(s, i) in speciesList">
-        <v-btn :key="i" class="ml-4 mr-4" fab small>
+        <v-btn :key="i" class="ml-4 mr-4" fab small @click="$emit('speciesSelected', i)">
             {{s.symbol}}
         </v-btn>
       </template>
