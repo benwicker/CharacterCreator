@@ -50,7 +50,7 @@ export default {
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 0px;
 }
  
 ::-webkit-scrollbar-track {

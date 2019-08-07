@@ -24,44 +24,156 @@
             {
                 "category": "Visual Characteristics",
                 "items": [
-                    {"name": "Skin Color", "value": "Light to dark tones"},
-                    {"name": "Hair Color", "value": "Black, blond, orange, brown, gray to white (usually with age)"},
-                    {"name": "Eye Color", "value": "Amber, blue, brown, gray, green, hazel, purple, or red"},
-                    {"name": "Distinctions", "value": "Biped with bilateral symmetry, opposable thumbs"}
+                    {
+                        "name": "Skin Color",
+                        "value": "Light to dark tones"
+                    },
+                    {
+                        "name": "Hair Color",
+                        "value": "Black, blond, orange, brown, gray to white (usually with age)"
+                    },
+                    {
+                        "name": "Eye Color",
+                        "value": "Amber, blue, brown, gray, green, hazel, purple, or red"
+                    },
+                    {
+                        "name": "Distinctions",
+                        "value": "Biped with bilateral symmetry, opposable thumbs"
+                    }
                 ]
             },
             {
                 "category": "Physical Characteristics",
                 "items": [
-                    {"name": "Height", "value": "4'8\" + 2d10\""},
-                    {"name": "Weight", "value": "110 lb + x2d4 lb"}
+                    {
+                        "name": "Height",
+                        "value": "4'8\" + 2d10\""
+                    },
+                    {
+                        "name": "Weight",
+                        "value": "110 lb + x2d4 lb"
+                    }
                 ]
             },
             {
                 "category": "Sociocultural Characteristics",
                 "items": [
-                    {"name": "Homeworld", "value": "Coruscant"},
-                    {"name": "Language", "value": "Galactic Basic"}
+                    {
+                        "name": "Homeworld",
+                        "value": "Coruscant"
+                    },
+                    {
+                        "name": "Language",
+                        "value": "Galactic Basic"
+                    }
                 ]
             }
         ],
         "traits": [
-            {"name": "Ability Score Increase", "value": "One ability score of your choice increases by 2, and two different abilities of your choice increase by 1. Alternatively, four ability scores of of your choice each increase by 1."},
-            {"name": "Age", "value": "Humans reach adulthood in their late teens and live less than a century."},
-            {"name": "Alignment", "value": "Humans tend toward no particular alignment. The best and worst are found among them."},
-            {"name": "Size", "value": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."},
-            {"name": "Speed", "value": "Your base walking speed is 30 feet."},
-            {"name": "Defiant", "value": "Humans are known to be stubborn and often refuse to give up. even against the worst odds. You can add a d4 to a skill check or saving throw, after rolling but before you know the outcome. You must then finish a short or long rest before you can use this feature again."},
-            {"name": "Proficiency", "value": "You gain proficiency in one skill, one tool, and one weapon of your choice."},
-            {"name": "Languages", "value": "You can speak, read, and write Galactic Basic and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: trandoshan curses, twi'lek musical expressions, chiss military phrases, and so on."}
+            {
+                "name": "Ability Score Increase",
+                "value": "One ability score of your choice increases by 2, and two different abilities of your choice increase by 1. Alternatively, four ability scores of of your choice each increase by 1."
+            },
+            {
+                "name": "Age",
+                "value": "Humans reach adulthood in their late teens and live less than a century."
+            },
+            {
+                "name": "Alignment",
+                "value": "Humans tend toward no particular alignment. The best and worst are found among them."
+            },
+            {
+                "name": "Size",
+                "value": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+            },
+            {
+                "name": "Speed",
+                "value": "Your base walking speed is 30 feet."
+            },
+            {
+                "name": "Defiant",
+                "value": "Humans are known to be stubborn and often refuse to give up. even against the worst odds. You can add a d4 to a skill check or saving throw, after rolling but before you know the outcome. You must then finish a short or long rest before you can use this feature again."
+            },
+            {
+                "name": "Proficiency",
+                "value": "You gain proficiency in one skill, one tool, and one weapon of your choice."
+            },
+            {
+                "name": "Languages",
+                "value": "You can speak, read, and write Galactic Basic and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: trandoshan curses, twi'lek musical expressions, chiss military phrases, and so on."
+            }
         ]
     },
     {
         "id": 1,
         "name": "Jawa",
         "symbol": "J",
-        "bio": [{}],
-        "characteristics": [{}],
-        "traits": [{}]
+        "bio": [
+            {"header": "Biology and Appearance", "content": "Jawas are easily identifiable by their traditional brown hooded robes, though it is not unheard of for them to wear other colors. Other notable features included their glowing yellow eyes, small stature and high pitched, quickly spoken language called Jawaese. Underneath their robes, jawas appear to be gaunt, rodent-like creatures, with shrunken faces and yellow eyes."},
+            {"header": "Society and Culture", "content": "Jawas are a communal, compulsive scavenger species who spend most of their life devoted to scavenging the deserts of Tatooine in search of any scrap metal, droid or mechanical part left behind from millennia of star travel and technological advancement. Most non-jawas regard the jawas as scavengers and thieves, a description that most jawas actually find pleasing. The jawa's unofficial motto is not to look for uses in a salvaged item, but rather to imagine someone else who might find a use for it. This is evidenced in their endless search for wares with which to trade with almost any being jawas encounter. They have a kind of instinctive feel for machinery and electronics, notorious for knowing how to get a piece of equipment functioning just well enough to sell."},
+            {"header":"Names", "content": "Jawa names are quickly spoken, complex, and often misunderstood. Jawas who spend the majority of their time around other species respond well to nicknames. Male and female names do not significantly deviate. Surnames are clan based. Male names. Bilvu, Mnak, Penk, Plin, Vih Female names. Bahimos, Kola, Levu, Rhovi, Uvet Surnames. Kkejenem, M'avoe, Tjoteelt, Wiamoel"}
+        ],
+        "characteristics": [
+            {
+                "category": "Visual Characteristics",
+                "items": [
+                    {
+                        "name": "Skin Color",
+                        "value": "Black"
+                    },
+                    {
+                        "name": "Hair Color",
+                        "value": "Black"
+                    },
+                    {
+                        "name": "Eye Color",
+                        "value": "Yellow"
+                    },
+                    {
+                        "name": "Distinctions",
+                        "value": "Diminutive stature, mechanical aptitude, thieving nature"
+                    }
+                ]
+            },
+            {
+                "category": "Physical Characteristics",
+                "items": [
+                    {
+                        "name": "Height",
+                        "value": "2'9\" + 2d4\""
+                    },
+                    {
+                        "name": "Weight",
+                        "value": "35 lb + x1 lb"
+                    }
+                ]
+            },
+            {
+                "category": "Sociocultural Characteristics",
+                "items": [
+                    {
+                        "name": "Homeworld",
+                        "value": "Tatooine"
+                    },
+                    {
+                        "name": "Language",
+                        "value": "Jawaese"
+                    }
+                ]
+            }
+        ],
+        "traits": [
+            {"name": "Ability Score Increase", "value": "Your Dexterity score increases by 2, and your Intelligence score increases by 1."},
+            {"name": "Age", "value": "Jawas are considered adults when they make their first sale and live less than a century."},
+            {"name": "Alignment", "value": "Jawas tendency to steal and swindle causes them to tend towards the dark side, though there are exceptions."},
+            {"name": "Size", "value": "Jawas stand around 3 to 4 feet tall and weigh about 40 lbs. Regardless of your position in that range, your size is Small."},
+            {"name": "Speed", "value": "Your base walking speed is 25 feet."},
+            {"name": "Darkvision", "value": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."},
+            {"name": "Grovel, Cower, and Beg", "value": "As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that can see you. Once you use this trait, you can't use it again until you finish a short or long rest."},
+            {"name": "Tech Dabbler", "value": "You know the ion blast at-will tech power. When you reach 3rd level, you can cast the repair droid tech power once per day. When you reach 5th level, you can also cast the hold droid tech power once per day. Intelligence is your techcasting ability for these powers. You do not require use of a wristpad for these powers."},
+            {"name": "Thieves", "value": "You have proficiency in Sleight of Hand."},
+            {"name": "Tinker", "value": "You have proficiency with tinker's tools. You can use these and spend 1 hour and 100 cr worth of materials to construct a Tiny Device (AC 5, 1 hp). You can take the Use an Object action to have your device cause one of the following effects: create a small explosion, create a repeating loud noise for 1 minute, create smoke for 1 minute, cause a small electrical fire. You can maintain a number of these devices up to your proficiency bonus at once, and a device stops functioning after 24 hours away from you. You can dismantle the device to reclaim the materials used to create it."},
+            {"name": "Languages", "value": "You can speak, read, and write Jawaese. You can understand spoken and written Galactic Basic, but your vocal cords do not allow you to speak it. Jawaese blends quickly spoken, semi-meaningless syllables with scents to be understood."}
+        ]
     }
 ]

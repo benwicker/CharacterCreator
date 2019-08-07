@@ -4,7 +4,7 @@
       <v-flex d-flex md11 lg11 class="fill-height">
         <v-layout class="fill-height">
           <v-flex md4 d-flex class="fill-height">
-            <description :bioList="selectedSpecies.bio" class="flex-grow-1"/>
+            <description :bioList="selectedSpecies.bio" class="flex-grow-1" />
           </v-flex>
           <v-flex md4 class="fill-height mb-0 pb-0">
             <v-layout column class="fill-height">
@@ -12,7 +12,11 @@
                 <v-card style="height: 100%; min-height: 0; width: 100%;"></v-card>
               </v-flex>
               <v-flex sm6 d-flex class="mb-0 pb-0" style="height: 100%">
-                <characteristics :name="selectedSpecies.name" :characteristics="selectedSpecies.characteristics" class="flex-grow-1" data-simplebar/>
+                <characteristics
+                  :name="selectedSpecies.name"
+                  :characteristics="selectedSpecies.characteristics"
+                  class="flex-grow-1"
+                />
               </v-flex>
             </v-layout>
           </v-flex>
@@ -22,20 +26,26 @@
         </v-layout>
       </v-flex>
       <v-flex md1 lg1 class="fill-height">
-        <selector :speciesList="species" v-on:speciesSelected="setSelectedSpecies($event)"/>
+        <v-layout d-flex class="row">
+          <v-flex md3></v-flex>
+          <v-flex md6>
+            <selector :speciesList="species" v-on:speciesSelected="setSelectedSpecies($event)" />
+          </v-flex>
+          <v-flex md3>
+            <v-btn block style="height: 100%;">Continue</v-btn>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-import Species from "@/data/Species.js";
+import Species from "~/static/data/species.json";
 import Traits from "~/components/species/Traits.vue";
 import Description from "~/components/species/Description.vue";
-import Characteristics from "~/components/species/Characteristics.vue"
+import Characteristics from "~/components/species/Characteristics.vue";
 import Selector from "~/components/species/Selector.vue";
-import "simplebar"; // or "import SimpleBar from 'simplebar';" if you want to use it manually.
-import "simplebar/dist/simplebar.css";
 
 export default {
   components: {
@@ -47,7 +57,7 @@ export default {
   data() {
     return {
       species: Species,
-      selectedSpecies: {}
+      selectedSpecies: Species[0]
     };
   },
   methods: {
@@ -59,7 +69,6 @@ export default {
 </script>
 
 <style scoped>
-
 .noHover {
   pointer-events: none;
 }
