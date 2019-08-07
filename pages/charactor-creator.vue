@@ -2,11 +2,11 @@
   <v-container ma-0 pa-0 fluid>
     <v-layout justify-center>
       <v-flex>
-        <v-stepper class="fill-height">
+        <v-stepper class="fill-height" v-model="currentStep">
           <v-layout class="fill-height" column ref="stepperLayout">
             <v-flex xs1 class="fill-height">
               <v-stepper-header>
-                <v-stepper-step editable step="1">Species</v-stepper-step>
+                <v-stepper-step editable :complete="currentStep > 1" step="1">Species</v-stepper-step>
                 <v-divider></v-divider>
                 <v-stepper-step editable step="2">Class</v-stepper-step>
                 <v-divider></v-divider>
@@ -16,7 +16,7 @@
             <v-flex d-flex xs11 class="fill-height">
               <v-stepper-items class="fill-height" style="width: 100%;">
                 <v-stepper-content step="1" class="fill-height">
-                  <species class="fill-height"/>
+                  <species class="fill-height" v-on:continue="incrementStep()"/>
                 </v-stepper-content>
                 <v-stepper-content step="2">
                   <div>Class Selection</div>
@@ -39,6 +39,16 @@ import Species from "~/components/species/Species.vue";
 export default {
   components: {
     Species
+  },
+  data() {
+    return {
+      currentStep: 1
+    }
+  },
+  methods: {
+    incrementStep: function() {
+      this.currentStep++;
+    }
   }
 };
 </script>

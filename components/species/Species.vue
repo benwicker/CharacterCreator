@@ -32,7 +32,7 @@
             <selector :speciesList="species" v-on:speciesSelected="setSelectedSpecies($event)" />
           </v-flex>
           <v-flex md3>
-            <v-btn block style="height: 100%;">Continue</v-btn>
+            <v-btn block style="height: 100%;" @click="$emit('continue')">Continue</v-btn>
           </v-flex>
         </v-layout>
       </v-flex>
