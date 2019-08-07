@@ -57,27 +57,28 @@
         </v-layout>
       </v-flex>
       <v-flex md1 lg1 class="fill-height">
-        <v-card class="scroll-y" style="height: 100%;" data-simplebar>
-          <v-card-text>Hello</v-card-text>
-        </v-card>
+        <selector :speciesList="species"/>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-import species from "static/data/species.json";
+import Species from "static/data/species.json";
 import Traits from "~/components/species/Traits.vue"
+import Selector from "~/components/species/Selector.vue"
 import "simplebar"; // or "import SimpleBar from 'simplebar';" if you want to use it manually.
 import "simplebar/dist/simplebar.css";
 
 export default {
   components: {
-    Traits
+    Traits,
+    Selector
   },
   data() {
     return {
-      selectedSpecies: species[0]
+      species: Species,
+      selectedSpecies: Species[0]
     };
   }
 };

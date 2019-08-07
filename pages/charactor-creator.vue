@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import Species from "~/components/Species.vue";
+import Species from "~/components/species/Species.vue";
 
 export default {
   components: {

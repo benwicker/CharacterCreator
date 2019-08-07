@@ -1,6 +1,7 @@
 [
     {
         "name": "Human",
+        "symbol": "H",
         "bio": [
             {
                 "id": 1,
@@ -53,5 +54,9 @@
             {"name": "Proficiency", "value": "You gain proficiency in one skill, one tool, and one weapon of your choice."},
             {"name": "Languages", "value": "You can speak, read, and write Galactic Basic and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: trandoshan curses, twi'lek musical expressions, chiss military phrases, and so on."}
         ]
+    },
+    {
+        "name": "Jawa",
+        "symbol": "J"
     }
 ]
