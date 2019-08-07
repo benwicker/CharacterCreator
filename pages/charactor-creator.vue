@@ -8,9 +8,9 @@
               <v-stepper-header>
                 <v-stepper-step editable :complete="currentStep > 1" step="1">Species</v-stepper-step>
                 <v-divider></v-divider>
-                <v-stepper-step editable :complete="currentStep > 2" step="2">Class</v-stepper-step>
+                <v-stepper-step editable :complete="currentStep > 2" step="2">Level</v-stepper-step>
                 <v-divider></v-divider>
-                <v-stepper-step editable step="3">Abilities</v-stepper-step>
+                <v-stepper-step editable step="3">Class</v-stepper-step>
               </v-stepper-header>
             </v-flex>
             <v-flex d-flex xs11 class="fill-height">
