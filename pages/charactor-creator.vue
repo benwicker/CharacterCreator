@@ -19,10 +19,10 @@
                   <species class="fill-height" v-on:continue="currentStep++"/>
                 </v-stepper-content>
                 <v-stepper-content step="2" class="fill-height">
-                  <level v-on:prev="currentStep--" v-on:next="currentStep++"/>
+                  <level class="fill-height" v-on:prev="currentStep--" v-on:next="currentStep++"/>
                 </v-stepper-content>
-                <v-stepper-content step="3">
-                  <div>Abilities Selection</div>
+                <v-stepper-content step="3" class="fill-height">
+                  <class class="fill-height" />
                 </v-stepper-content>
               </v-stepper-items>
             </v-flex>
@@ -36,10 +36,12 @@
 <script>
 import Species from "~/components/species/Species.vue";
 import Level from "~/components/Level.vue";
+import Class from "~/components/class/Class.vue";
 
 export default {
   components: {
     Species,
+    Class,
     Level
   },
   data() {
