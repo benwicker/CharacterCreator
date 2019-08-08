@@ -10,10 +10,10 @@
 
           <v-tabs-items class="fill-height"  v-model="tab">
             <v-tab-item class="fill-height pa-2">
-              <overview class="fill-height" d-flex :description="currentClass.description"/>
+              <overview class="fill-height" :description="currentClass.description"/>
             </v-tab-item>
-            <v-tab-item class="fill-height">
-              <div>Hello2</div>
+            <v-tab-item class="fill-height pa-2">
+              <features class="fill-height" :features="currentClass.features" />
             </v-tab-item>
             <v-tab-item class="fill-height">
               <div>Hello3</div>
@@ -25,7 +25,8 @@
         </v-tabs>
       </v-flex>
       <v-flex sm1>
-          <div>Hello</div>
+          <v-card class="fill-height">
+          </v-card>
       </v-flex>
     </v-layout>
   </v-container>
@@ -33,11 +34,13 @@
 
 <script>
 import Classes from "~/static/data/classes.json";
-import Overview from "~/components/class/Overview.vue"
+import Overview from "~/components/class/Overview.vue";
+import Features from "~/components/class/Features.vue";
 
 export default {
     components: {
-        Overview
+        Overview,
+        Features
     },
   data() {
     return {

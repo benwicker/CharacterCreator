@@ -36,6 +36,16 @@
                     "You can make a guardian quickly by following these suggestions. First, make Strength your highest ability score, followed by Constitution. Second, choose the Jedi or Sith background."
                 ]
             }
-        ]
+        ],
+        "features": {
+            "hp": 10,
+            "proficiencies": {
+                "armor": ["light armor", "medium armor"],
+                "weapon": [],
+                "savingThrows": [],
+                "skills": []
+            },
+            "equipment": []
+        }
     }
 ]
