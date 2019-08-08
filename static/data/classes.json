@@ -39,13 +39,8 @@
         ],
         "features": {
             "hp": 10,
-            "proficiencies": {
-                "armor": ["light armor", "medium armor"],
-                "weapon": [],
-                "savingThrows": [],
-                "skills": []
-            },
-            "equipment": []
+            "proficiencies": [],
+            "equipmentOptions": []
         }
     }
 ]
