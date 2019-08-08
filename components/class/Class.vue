@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md pa-0 ma-0>
     <v-layout column>
-      <v-flex sm11>
+      <v-flex d-flex sm11>
         <v-tabs dark vertical v-model="tab" class="fill-height">
           <v-tab>Overview</v-tab>
           <v-tab>Features</v-tab>
@@ -9,8 +9,8 @@
           <v-tab>Powers</v-tab>
 
           <v-tabs-items class="fill-height"  v-model="tab">
-            <v-tab-item class="fill-height">
-              <div>Hello1</div>
+            <v-tab-item class="fill-height pa-2">
+              <overview class="fill-height" d-flex :description="currentClass.description"/>
             </v-tab-item>
             <v-tab-item class="fill-height">
               <div>Hello2</div>
@@ -32,10 +32,18 @@
 </template>
 
 <script>
+import Classes from "~/static/data/classes.json";
+import Overview from "~/components/class/Overview.vue"
+
 export default {
+    components: {
+        Overview
+    },
   data() {
     return {
-      tab: null
+      tab: null,
+      classes: Classes,
+      currentClass: Classes[0]
     };
   }
 };

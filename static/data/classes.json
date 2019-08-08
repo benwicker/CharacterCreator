@@ -1,0 +1,41 @@
+[
+    {
+        "id": 0,
+        "name": "Guardian",
+        "description": [
+            {
+                "header": "Guardian",
+                "content": [
+                    "A dark-skinned human quickly runs down a corridor, the metal armor under his grey cloak clanking with each step. He rounds the corner into the prison while the lights and power are still out, urging the weakened prisoners to escape. Just then a handful of slavers arrive and ready their blasters. The man draws and ignites a white-bladed lightsaber, ready to die for the strangers behind him.",
+                    "A sith pureblood, clad head to toe in black and red armor, charges towards a line of soldiers. Shot after shot deflects off his armor until he reaches his prey, where he unleashes his fury in a series of devastating lightsaber sweeps.",
+                    "A zabrak general dramatically leaps to his soon-to-be overrun squad, landing with a flurry of lightsaber attacks. At the arrival of this powerful Jedi, the attackers fall back.",
+                    "Guardians are the master of the art of lightsaber combat. They focus on utilizing the everpresent power of the Force to enable devastating attacks, often singlehandedly turning the tide of battle."
+                ]
+            },
+            {
+                "header": "Protector or Destroyer",
+                "content": [
+                    "An unstoppable agent of the Force, the guardian channels the power flowing through him into his weapons. Their skills with a lightsaber are unrivalled. Subduing their enemies and bolstering their allies, the guardian uses the Force to control what happens around them."
+                ]
+            },
+            {
+                "header": "Natural Leaders",
+                "content": [
+                    "The guardian's command of the Force lends them a powerful presence. Whether through fear and intimidation or respect and admiration, the guardian is one of the greatest generals on the battlefield. They are a symbol of power to their followers."
+                ]
+            },
+            {
+                "header": "Creating a Guardian",
+                "content": [
+                    "While creating your guardian, consider your attraction to the Force and its most famous practitioners – the Jedi and the Sith. Are you a member of one of the two orders, or do you walk a different path? Are you a soldier tapping into a latent Force-sensitivity? Were you trained in the force from a young age, or did you discover it as an adult? How do you treat those weaker than you? What was your family like? Do you see the Force as light and dark, or an impartial river of gray?"
+                ]
+            },
+            {
+                "header": "Quick Build",
+                "content": [
+                    "You can make a guardian quickly by following these suggestions. First, make Strength your highest ability score, followed by Constitution. Second, choose the Jedi or Sith background."
+                ]
+            }
+        ]
+    }
+]
