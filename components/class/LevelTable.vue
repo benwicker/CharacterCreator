@@ -25,7 +25,7 @@ export default {
       ],
       levels: [
         {
-          lvl: "1",
+          lvl: 1,
           pb: "+2",
           features: "Forcecasting, Channel the Force",
           fpk: 4,
@@ -33,7 +33,7 @@ export default {
           mpl: "1st"
         },
         {
-          lvl: "2",
+          lvl: 2,
           pb: "+2",
           features: "Force-Empowered Strikes, Guardian Aura",
           fpk: 5,
@@ -41,7 +41,7 @@ export default {
           mpl: "1st"
         },
         {
-          lvl: "3",
+          lvl: 3,
           pb: "+2",
           features: "Guardian Focus",
           fpk: 6,
@@ -49,7 +49,7 @@ export default {
           mpl: "1st"
         },
         {
-          lvl: "4",
+          lvl: 4,
           pb: "+2",
           features: "Ability Score Improvement",
           fpk: 7,
@@ -57,7 +57,7 @@ export default {
           mpl: "1st"
         },
         {
-          lvl: "5",
+          lvl: 5,
           pb: "+3",
           features: "Extra Attack",
           fpk: 9,
@@ -65,7 +65,7 @@ export default {
           mpl: "2nd"
         },
         {
-          lvl: "6",
+          lvl: 6,
           pb: "+3",
           features: "Force Purity",
           fpk: 10,
@@ -73,7 +73,7 @@ export default {
           mpl: "2nd"
         },
         {
-          lvl: "7",
+          lvl: 7,
           pb: "+3",
           features: "Focus feature",
           fpk: 11,
@@ -81,7 +81,7 @@ export default {
           mpl: "2nd"
         },
         {
-          lvl: "8",
+          lvl: 8,
           pb: "+3",
           features: "Ability Score Improvement",
           fpk: 12,
@@ -89,7 +89,7 @@ export default {
           mpl: "2nd"
         },
         {
-          lvl: "9",
+          lvl: 9,
           pb: "+4",
           features: "-",
           fpk: 14,
@@ -97,7 +97,7 @@ export default {
           mpl: "3rd"
         },
         {
-          lvl: "10",
+          lvl: 10,
           pb: "+4",
           features: "Additional Aura",
           fpk: 15,
@@ -105,7 +105,7 @@ export default {
           mpl: "3rd"
         },
         {
-          lvl: "11",
+          lvl: 11,
           pb: "+4",
           features: "Improved Force-Empowered Strikes",
           fpk: 16,
@@ -113,7 +113,7 @@ export default {
           mpl: "3rd"
         },
         {
-          lvl: "12",
+          lvl: 12,
           pb: "+4",
           features: "Ability Score Improvement",
           fpk: 17,
@@ -121,7 +121,7 @@ export default {
           mpl: "3rd"
         },
         {
-          lvl: "13",
+          lvl: 13,
           pb: "+5",
           features: "-",
           fpk: 19,
@@ -129,7 +129,7 @@ export default {
           mpl: "4th"
         },
         {
-          lvl: "14",
+          lvl: 14,
           pb: "+5",
           features: "Cleansing Touch",
           fpk: 20,
@@ -137,7 +137,7 @@ export default {
           mpl: "4th"
         },
         {
-          lvl: "15",
+          lvl: 15,
           pb: "+5",
           features: "Focus feature",
           fpk: 21,
@@ -145,7 +145,7 @@ export default {
           mpl: "4th"
         },
         {
-          lvl: "16",
+          lvl: 16,
           pb: "+5",
           features: "Ability Score Improvement",
           fpk: 22,
@@ -153,7 +153,7 @@ export default {
           mpl: "4th"
         },
         {
-          lvl: "17",
+          lvl: 17,
           pb: "+6",
           features: "-",
           fpk: 24,
@@ -161,7 +161,7 @@ export default {
           mpl: "5th"
         },
         {
-          lvl: "18",
+          lvl: 18,
           pb: "+6",
           features: "Aura Improvements",
           fpk: 25,
@@ -169,7 +169,7 @@ export default {
           mpl: "5th"
         },
         {
-          lvl: "19",
+          lvl: 19,
           pb: "+6",
           features: "Ability Score Improvement",
           fpk: 26,
@@ -177,7 +177,7 @@ export default {
           mpl: "5th"
         },
         {
-          lvl: "20",
+          lvl: 20,
           pb: "+6",
           features: "Focus feature",
           fpk: 27,
