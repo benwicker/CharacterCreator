@@ -4,6 +4,7 @@
       <v-flex d-flex sm11>
         <v-tabs dark vertical v-model="tab" class="fill-height">
           <v-tab>Overview</v-tab>
+          <v-tab>Level Table</v-tab>
           <v-tab>Features</v-tab>
           <v-tab>SubClasses</v-tab>
           <v-tab>Powers</v-tab>
@@ -13,7 +14,7 @@
               <overview class="fill-height" :description="currentClass.description"/>
             </v-tab-item>
             <v-tab-item class="fill-height pa-2">
-              <features class="fill-height" :features="currentClass.features" />
+              <level-table />
             </v-tab-item>
             <v-tab-item class="fill-height">
               <div>Hello3</div>
@@ -35,11 +36,13 @@
 <script>
 import Classes from "~/static/data/classes.json";
 import Overview from "~/components/class/Overview.vue";
+import LevelTable from "~/components/class/LevelTable.vue";
 import Features from "~/components/class/Features.vue";
 
 export default {
     components: {
         Overview,
+        LevelTable,
         Features
     },
   data() {

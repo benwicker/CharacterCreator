@@ -7,7 +7,7 @@
 <script>
 export default {
     props: {
-        features: Object
+        features: Array
     }
 }
 </script>

@@ -68,7 +68,6 @@
           <v-spacer />
           <v-btn
             color="primary"
-            flat
             nuxt
             to="/inspire"
           >

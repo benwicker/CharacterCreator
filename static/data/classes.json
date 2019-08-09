@@ -37,10 +37,26 @@
                 ]
             }
         ],
-        "features": {
-            "hp": 10,
-            "proficiencies": [],
-            "equipmentOptions": []
-        }
+        "features": [
+            {
+                "lvl": 1,
+                "name": "Forcecasting"
+            },
+            {
+                "lvl": 1,
+                "name": "Channel the Force"
+            },
+            {
+                "lvl": 2,
+                "name": "Force-Empowered Strikes"
+            },
+            {
+                "lvl": 2,
+                "name": "Guardian Aura"
+            }
+        ],
+        "hp": 10,
+        "proficiencies": [],
+        "equipmentOptions": []
     }
 ]
