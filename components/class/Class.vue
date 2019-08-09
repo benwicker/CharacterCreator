@@ -14,7 +14,7 @@
               <overview class="fill-height" :description="currentClass.description"/>
             </v-tab-item>
             <v-tab-item class="fill-height pa-2">
-              <level-table />
+              <level-table class="fill-height"/>
             </v-tab-item>
             <v-tab-item class="fill-height">
               <div>Hello3</div>
