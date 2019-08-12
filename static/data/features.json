@@ -1,0 +1,61 @@
+[
+    {
+        "lvl": 1,
+        "header": "Forcecasting",
+        "content": [
+            "In your meditations on the force, you have learned powers, fragments of knowledge that imbue you with an abiding force ability. See chapter 10 for the general rules of forcecasting and chapter 11 for the force powers list."
+        ],
+        "sections": [
+            {
+                "header": "Force Powers Known",
+                "content": [
+                    "You learn 4 force powers of your choice, and you learn more at higher levels, as shown in the Force Powers Known column of the guardian class table. You may not learn a force power of a level higher than your Max Power Level, and you may learn a force power at the same time you learn its prerequisite."
+                ]
+            },
+            {
+                "header": "Force Points",
+                "content": [
+                    "You have a number of force points equal to your guardian level x 2, as shown in the Force Points column of the guardian class table, + your Wisdom or Charisma modifier (your choice). You use these force points to cast force powers. You regain all expended force points when you finish a long rest."
+                ]
+            },
+            {
+                "header": "Max Power Level",
+                "content": [
+                    "Many force powers can be overpowered, consuming more force points to create a greater effect. You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the guardian class table.",
+                    "You may only cast force powers at 5th-level once. You regain the ability to do so after a long rest."
+                ]
+            },
+            {
+                "header": "Forcecasting Ability",
+                "content": [
+                    "Your forcecasting ability varies based on the alignment of the powers you cast. You use your Wisdom for light side powers, Charisma for dark side powers, and Wisdom or Charisma for universal powers (your choice). You use this ability score modifier whenever a power refers to your forcecasting ability. In addition, you use this ability score modifier when setting the saving throw DC for a force power you cast and when making an attack roll with one.",
+                    "Force save DC = 8 + your proficiency bonus + your forcecasting ability modifier",
+                    "Force attack modifier = your proficiency bonus + your forcecasting ability modifier"
+                ]
+            }
+        ]
+    },
+    {
+        "lvl": 1,
+        "header": "Channel The Force",
+        "content": [
+            "You know how to channel the Force to create a unique effect. You start with your choice from two such effects: Cause Harm and Lend Aid. At 3rd level, your Guardian Focus grants you an additional effect. When you use your Channel the Force, you choose which effect to create.",
+            "Some Channel the Force effects require saving throws. When you use such an effect from this class, the DC equals your universal force save DC.",
+            "You can use this feature a number of times equal to your Wisdom or Charisma modifier (your choice, minimum of once). You regain expended uses when you finish a short or long rest."
+        ],
+        "sections": [
+            {
+                "header": "Cuase Harm",
+                "content": [
+                    "As an action, you can expend a use of your Channel the Force to sap the life from a hostile creature you can see within 30 feet. That creature must make a Constitution saving throw. On a failed save, the creature takes necrotic damage equal to your guardian level + your Charisma modifier (minimum of one), or half as much on a successful one."
+                ]
+            },
+            {
+                "header": "Lend Aid",
+                "content": [
+                    "As a bonus action, you can expend a use of your Channel the Force and touch a creature within 5 feet of you. That creature regains hit points equal to your guardian level + your Wisdom modifier (minimum of one). Alternatively, if the creature is poisoned or diseased, you neutralize the poison or disease. If more than one poison or disease afflicts the target, you neutralize one poison or disease that you know is present, or you neutralize one at random."
+                ]
+            }
+        ]
+    }
+]

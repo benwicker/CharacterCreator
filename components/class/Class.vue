@@ -1,7 +1,7 @@
 <template>
   <v-container fluid grid-list-md pa-0 ma-0>
     <v-layout column>
-      <v-flex d-flex sm11>
+      <v-flex d-flex sm11 wrap>
         <v-tabs dark vertical v-model="tab" class="fill-height">
           <v-tab>Overview</v-tab>
           <v-tab>Level Table</v-tab>
@@ -17,7 +17,7 @@
               <level-table class="fill-height" />
             </v-tab-item>
             <v-tab-item class="fill-height pa-2">
-              <features class="fill-height" :description="currentClass.description" />
+              <features class="overflow-y-auto fill-height"/>
             </v-tab-item>
             <v-tab-item class="fill-height">
               <div>Hello4</div>

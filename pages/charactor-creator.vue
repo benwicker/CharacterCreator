@@ -11,18 +11,23 @@
                 <v-stepper-step editable :complete="currentStep > 2" step="2">Level</v-stepper-step>
                 <v-divider></v-divider>
                 <v-stepper-step editable step="3">Class</v-stepper-step>
+                <v-divider></v-divider>
+                <v-stepper-step editable step="4">Character Sheet</v-stepper-step>
               </v-stepper-header>
             </v-flex>
             <v-flex d-flex xs11 class="fill-height">
               <v-stepper-items class="fill-height" style="width: 100%;">
                 <v-stepper-content step="1" class="fill-height">
-                  <species class="fill-height" v-on:continue="currentStep++"/>
+                  <species class="fill-height" v-on:continue="currentStep++" />
                 </v-stepper-content>
                 <v-stepper-content step="2" class="fill-height">
-                  <level class="fill-height" v-on:prev="currentStep--" v-on:next="currentStep++"/>
+                  <level class="fill-height" v-on:prev="currentStep--" v-on:next="currentStep++" />
                 </v-stepper-content>
                 <v-stepper-content step="3" class="fill-height">
                   <class class="fill-height" />
+                </v-stepper-content>
+                <v-stepper-content step="4" class="fill-height">
+                  <pdf-view />
                 </v-stepper-content>
               </v-stepper-items>
             </v-flex>
@@ -37,17 +42,19 @@
 import Species from "~/components/species/Species.vue";
 import Level from "~/components/Level.vue";
 import Class from "~/components/class/Class.vue";
+import PdfView from "~/components/PdfView.vue";
 
 export default {
   components: {
     Species,
     Class,
-    Level
+    Level,
+    PdfView
   },
   data() {
     return {
       currentStep: 1
-    }
+    };
   }
 };
 </script>
@@ -59,16 +66,16 @@ export default {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 </style>
